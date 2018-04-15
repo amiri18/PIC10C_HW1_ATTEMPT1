@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41A7836C2082C0F300FEA93F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41A7836B2082C0F300FEA93F /* main.cpp */; };
+		41A7836C2082C0F300FEA93F /* siete-y-medio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41A7836B2082C0F300FEA93F /* siete-y-medio.cpp */; };
+		41A783772082F48F00FEA93F /* cards.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41A783762082F48F00FEA93F /* cards.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		41A783682082C0F300FEA93F /* PIC10C_HW1_ATTEMPT1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PIC10C_HW1_ATTEMPT1; sourceTree = BUILT_PRODUCTS_DIR; };
-		41A7836B2082C0F300FEA93F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		41A7836B2082C0F300FEA93F /* siete-y-medio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "siete-y-medio.cpp"; sourceTree = "<group>"; };
+		41A783752082F47F00FEA93F /* cards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cards.h; sourceTree = "<group>"; };
+		41A783762082F48F00FEA93F /* cards.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cards.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		41A7836A2082C0F300FEA93F /* PIC10C_HW1_ATTEMPT1 */ = {
 			isa = PBXGroup;
 			children = (
-				41A7836B2082C0F300FEA93F /* main.cpp */,
+				41A7836B2082C0F300FEA93F /* siete-y-medio.cpp */,
+				41A783752082F47F00FEA93F /* cards.h */,
+				41A783762082F48F00FEA93F /* cards.cpp */,
 			);
 			path = PIC10C_HW1_ATTEMPT1;
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41A7836C2082C0F300FEA93F /* main.cpp in Sources */,
+				41A7836C2082C0F300FEA93F /* siete-y-medio.cpp in Sources */,
+				41A783772082F48F00FEA93F /* cards.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
