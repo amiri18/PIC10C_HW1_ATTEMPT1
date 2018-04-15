@@ -56,9 +56,31 @@ public:
     
     /**
      accessor function: allows for cards to compared by rank
+     @return true if card2 is greater, false if card2 is less
      */
-    bool operator<(const Card& card) const;
+    bool operator < (const Card& card2) const;
 };
 
+class Hand {
+private:
+    float value; // stores the value of the cards
+    vector<Card> hand; // stores cards
+public:
+    
+    Hand();
+    
+    void addCard(const Card& card);
+    
+    float handTotal() const;
+};
+
+class Player {
+private:
+    int money;
+    
+public:
+    Player(int m);
+    
+};
 
 #endif
