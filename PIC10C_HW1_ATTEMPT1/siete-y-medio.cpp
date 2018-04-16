@@ -19,18 +19,22 @@ int main() {
     playerHand.addCard(card1);
     cout << "Your cards: \n";
     playerHand.display();
-    char yes = 'y';
-    cout << "Your total is " << playerHand.total() << ". Do you want another card (y/n)?";
-    cin >> yes;
-    while (yes) {
-        Card anotherCard;
-        playerHand.addCard(anotherCard);
-        cout << "New Card: \n";
-        anotherCard.display();
-        cout << "\n Your cards: \n";
-        playerHand.display();
-        cout << "Your total is " << playerHand.total() << ". Do you want another card (y/n)?";
+    bool more = true;
+    while (more) {
+        char yes;
+        cout << "Your total is " << playerHand.total() << ". Do you want another card (y/n)? ";
         cin >> yes;
+        if (yes == 'y') {
+            Card anotherCard;
+            playerHand.addCard(anotherCard);
+            cout << "New Card: \n";
+            anotherCard.display();
+            cout << "\n Your cards: \n";
+            playerHand.display();
+        }
+        else {
+            more = false;
+        }
     }
     Hand dealerHand;
     Card card2;

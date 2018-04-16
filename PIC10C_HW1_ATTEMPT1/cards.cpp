@@ -1,6 +1,7 @@
 #include "cards.h"
 #include <cstdlib>
 #include <iostream>
+#include <iomanip>
 
 Card::Card(){ // construct a random card
     int r = 1 + rand() % 4;
@@ -143,7 +144,7 @@ bool Card::operator < (const Card& card2) const{
 
 void Card::display() const {
     cout << "\t " << getSpanishRank() << " de " << getSpanishSuit();
-    cout << "\t (" << getEnglishRank() << " of " << getEnglishSuit() << ").\n";
+    cout << "  (" << getEnglishRank() << " of " << getEnglishSuit() << ").\n";
 }
 
 Hand::Hand(): value(0) {} // constructor sets the hand's initial value at 0
@@ -170,8 +171,10 @@ float Hand::total() const {
 
 void Hand::display() const {
     for (size_t i = 0; i < hand.size(); ++i){
-        cout << "\t " << hand[i].getSpanishRank() << " de " << hand[i].getSpanishSuit();
-        cout << "\t (" << hand[i].getEnglishRank() << " of " << hand[i].getEnglishSuit() << ").\n";
+        string n = hand[i].getSpanishRank() + " de " + hand[i].getSpanishSuit();
+        cout << "\t ";
+        cout << setfill(' ') << setw(19) << left << n;
+        cout << "(" << hand[i].getEnglishRank() << " of " << hand[i].getEnglishSuit() << ").\n";
     }
 }
 
