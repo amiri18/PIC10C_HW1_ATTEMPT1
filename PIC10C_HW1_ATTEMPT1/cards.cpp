@@ -4,6 +4,7 @@
 #include <iomanip>
 
 Card::Card(){ // construct a random card
+    srand(static_cast<unsigned int>(time(0)));
     int r = 1 + rand() % 4;
     switch (r) {// pick random suit
         case 1: suit = OROS;
@@ -143,8 +144,10 @@ bool Card::operator < (const Card& card2) const{
 }
 
 void Card::display() const {
-    cout << "\t " << getSpanishRank() << " de " << getSpanishSuit();
+    // output when displaying a "new card"
+    cout << "\t" << getSpanishRank() << " de " << getSpanishSuit();
     cout << "  (" << getEnglishRank() << " of " << getEnglishSuit() << ").\n";
+    // tab, card in Spanish, English translation in (...)
 }
 
 Hand::Hand(): value(0) {} // constructor sets the hand's initial value at 0
@@ -170,25 +173,30 @@ float Hand::total() const {
 }
 
 void Hand::display() const {
+    // list each card in the player's hand
     for (size_t i = 0; i < hand.size(); ++i){
+        // string stores the Spanish name of the card
         string n = hand[i].getSpanishRank() + " de " + hand[i].getSpanishSuit();
-        cout << "\t ";
-        cout << setfill(' ') << setw(19) << left << n;
+        cout << "\t "; // tab
+        // output Spanish part using setfill w/ setw to make sure spacing is accurate
+        cout << setfill(' ') << setw(20) << left << n;
+        // output English part (will be lined up)
         cout << "(" << hand[i].getEnglishRank() << " of " << hand[i].getEnglishSuit() << ").\n";
     }
 }
 
-Player::Player(int m): money(m) {}
+Player::Player(int m): money(m) {} // player constructor
 
 int Player::getMoney() const {
     return money;
 }
 
 void Player::updateMoney(bool won, int bet){
+    // if they player won against the deal add bet
     if (won) {
         money += bet;
     }
-    else {
+    else { // player lost against dealer, subtract bet
         money -= bet;
     }
 }

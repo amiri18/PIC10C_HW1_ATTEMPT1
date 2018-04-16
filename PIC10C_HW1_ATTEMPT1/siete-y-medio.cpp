@@ -29,7 +29,7 @@ int main() {
             playerHand.addCard(anotherCard);
             cout << "New Card: \n";
             anotherCard.display();
-            cout << "\n Your cards: \n";
+            cout << "\nYour cards: \n";
             playerHand.display();
         }
         else {
@@ -39,7 +39,7 @@ int main() {
     Hand dealerHand;
     Card card2;
     dealerHand.addCard(card2);
-    cout << "Dealer's cards: ";
+    cout << "Dealer's cards: \n";
     dealerHand.display();
     
     

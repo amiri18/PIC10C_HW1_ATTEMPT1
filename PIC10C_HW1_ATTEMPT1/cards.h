@@ -56,10 +56,14 @@ public:
     
     /**
      accessor function: allows for cards to compared by rank
+     @param card2 , card to be compared
      @return true if card2 is greater, false if card2 is less
      */
     bool operator < (const Card& card2) const;
     
+    /**
+     accessor function: displays a single card
+     */
     void display() const;
 };
 
@@ -79,8 +83,15 @@ public:
      */
     void addCard(const Card& card);
     
+    /**
+     accessor function: gets the total value of the hand
+     @return total
+     */
     float total() const;
     
+    /**
+     accessor function: display's the cards in the player's hand
+     */
     void display() const;
     
     //bool compareHands(const Hand& hand) const;
@@ -97,8 +108,17 @@ public:
      */
     Player(int m);
     
+    /**
+     accessor function: get's the player's money
+     @return money
+     */
     int getMoney() const;
     
+    /**
+     mutator function: adds or subtracts the player's money depending on whether or not they won that round
+     @param won , true if they bet the dealer, false if not
+     @parma bet , add/subtract the bet
+     */
     void updateMoney(bool won, int bet);
     
 };
