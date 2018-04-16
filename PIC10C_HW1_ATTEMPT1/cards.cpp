@@ -142,8 +142,8 @@ bool Card::operator < (const Card& card2) const{
 }
 
 void Card::display() const {
-    cout << "\t" << getSpanishRank() << "de" << getSpanishSuit();
-    cout << "\t(" << getEnglishRank() << "of" << getEnglishSuit() << ").\n";
+    cout << "\t " << getSpanishRank() << " de " << getSpanishSuit();
+    cout << "\t (" << getEnglishRank() << " of " << getEnglishSuit() << ").\n";
 }
 
 Hand::Hand(): value(0) {} // constructor sets the hand's initial value at 0
@@ -170,8 +170,8 @@ float Hand::total() const {
 
 void Hand::display() const {
     for (size_t i = 0; i < hand.size(); ++i){
-        cout << "\t" << hand[i].getSpanishRank() << "de" << hand[i].getSpanishSuit();
-        cout << "\t(" << hand[i].getEnglishRank() << "of" << hand[i].getEnglishSuit() << ").\n";
+        cout << "\t " << hand[i].getSpanishRank() << " de " << hand[i].getSpanishSuit();
+        cout << "\t (" << hand[i].getEnglishRank() << " of " << hand[i].getEnglishSuit() << ").\n";
     }
 }
 
