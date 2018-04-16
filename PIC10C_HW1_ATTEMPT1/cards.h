@@ -59,6 +59,8 @@ public:
      @return true if card2 is greater, false if card2 is less
      */
     bool operator < (const Card& card2) const;
+    
+    void display() const;
 };
 
 class Hand {
@@ -77,10 +79,11 @@ public:
      */
     void addCard(const Card& card);
     
-    /**
-     accessor function: gets the total
-     */
-    float handTotal() const;
+    float total() const;
+    
+    void display() const;
+    
+    //bool compareHands(const Hand& hand) const;
 };
 
 class Player {
@@ -93,6 +96,10 @@ public:
      @param m , money
      */
     Player(int m);
+    
+    int getMoney() const;
+    
+    void updateMoney(bool won, int bet);
     
 };
 
