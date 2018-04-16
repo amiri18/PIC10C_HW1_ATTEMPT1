@@ -66,19 +66,32 @@ private:
     float value; // stores the value of the cards
     vector<Card> hand; // stores cards
 public:
-    
+    /**
+     Constructor: sets the value to 0 and default initializes the vector of cards
+     */
     Hand();
     
+    /**
+     mutator function: adds a card to the hand
+     @param card , card to be added
+     */
     void addCard(const Card& card);
     
+    /**
+     accessor function: gets the total
+     */
     float handTotal() const;
 };
 
 class Player {
 private:
-    int money;
+    int money; // stores the money
     
 public:
+    /**
+     Constructor: takes in the player's initial amount of money
+     @param m , money
+     */
     Player(int m);
     
 };
