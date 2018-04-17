@@ -15,13 +15,23 @@ int main() {
     // initialize player
     Player player(100);
     
+    ofstream recordLog;
+    recordLog.open("gamelog.txt");
+  
+    int gameCount = 0;
+    
     // while the player has money (more than $0 and less than $1000) play the game
     while (player.getMoney() > 0 && player.getMoney() < 1000){
+        ++gameCount;
+        recordLog << "-----------------------------------------------\n\n";
+        recordLog << "Game number: " << gameCount << "\t\t Money left: $" << player.getMoney();
         
         cout << "You have $" << player.getMoney() << ". Enter bet: ";
         // take in the bet
         int bet = 0;
         cin >> bet;
+        
+        recordLog << "\nBet: " << bet << "\n\n";
         
         Hand playerHand; // store player's card
         Hand dealerHand; // store dealer's cards
@@ -31,7 +41,6 @@ int main() {
         Card card1;
         playerHand.addCard(card1);
         playerHand.display();
-        
         
         bool more = true;
         bool bust = false;
@@ -119,6 +128,7 @@ int main() {
             cout << "Nobody wins!\n\n";
         }
     }
+    recordLog << "-----------------------------------------------";
     if (player.getMoney() >= 1000) { // if the player won the whole game
         cout << "You win " << player.getMoney() << ".\n\n";
         cout << "Congratulations. You beat the casino!\n\n";
@@ -129,6 +139,10 @@ int main() {
         cout << "Come back when you have more money.\n\n";
         cout << "Bye!\n";
     }
-   
+    
+    recordLog.close();
+    
+    cin.get();
+    cin.get();
     return 0;
 }
