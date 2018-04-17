@@ -9,7 +9,7 @@
 using namespace std;
 
 int main() {
-
+    srand(static_cast<unsigned int>(time(NULL)));
     int bet = 0;
     cout << "You have $100. Enter bet: ";
     cin >> bet;
@@ -41,7 +41,34 @@ int main() {
     dealerHand.addCard(card2);
     cout << "Dealer's cards: \n";
     dealerHand.display();
-    
-    
+    cout << "The dealer's total is " << dealerHand.total() << endl;
+    more = true;
+    while (more) {
+        if (dealerHand.total() < 5 && dealerHand.total() <= playerHand.total()){
+            Card anotherOne;
+            dealerHand.addCard(anotherOne);
+            cout << "New Card: \n";
+            dealerHand.display();
+            cout << "The dealer's total is " << dealerHand.total() << endl;
+        }
+        else if (dealerHand.total() <= playerHand.total() && dealerHand.total() >= 5 && dealerHand.total() <= 5.5) {
+            int r = 1 + rand() % 2;
+            switch (r) {
+                case 1: {Card anotherOne;
+                    dealerHand.addCard(anotherOne);
+                    cout << "New Card: \n";
+                    dealerHand.display();
+                    cout << "The dealer's total is " << dealerHand.total() << endl;
+                    break;}
+                case 2: { more = false;
+                    break;
+                }
+            }
+        }
+        else {
+            more = false;
+        }
+    }
+   
     return 0;
 }

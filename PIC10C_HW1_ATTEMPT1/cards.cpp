@@ -4,7 +4,6 @@
 #include <iomanip>
 
 Card::Card(){ // construct a random card
-    srand(static_cast<unsigned int>(time(0)));
     int r = 1 + rand() % 4;
     switch (r) {// pick random suit
         case 1: suit = OROS;
