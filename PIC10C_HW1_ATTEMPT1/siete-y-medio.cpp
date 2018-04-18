@@ -49,7 +49,7 @@ int main() {
         
         // record player's card in gamelog
         recordLog << "Your cards:\n";
-        recordLog << "\t\t";
+        recordLog << "\t";
         string n = card1.getSpanishRank() + " de " + card1.getSpanishSuit();
         recordLog << setfill(' ') << setw(20) << left << n;
         recordLog << "(" << card1.getEnglishRank() << " of " << card1.getEnglishSuit() << ").\n";
@@ -78,7 +78,7 @@ int main() {
                     playerHand.display(); // display all their cards
                     
                     // record player's additional cards in gamelog
-                    recordLog << "\t\t";
+                    recordLog << "\t";
                     string n = anotherCard.getSpanishRank() + " de " + anotherCard.getSpanishSuit();
                     recordLog << setfill(' ') << setw(20) << left << n;
                     recordLog << "(" << anotherCard.getEnglishRank() << " of " << anotherCard.getEnglishSuit() << ").\n";
@@ -97,7 +97,7 @@ int main() {
             
             // record dealer's card in gamelog
             recordLog << "Dealer's cards:\n";
-            recordLog << "\t\t";
+            recordLog << "\t";
             string n = card2.getSpanishRank() + " de " + card2.getSpanishSuit();
             recordLog << setfill(' ') << setw(20) << left << n;
             recordLog << "(" << card2.getEnglishRank() << " of " << card2.getEnglishSuit() << ").\n";
@@ -119,7 +119,7 @@ int main() {
                     cout << endl << "The dealer's total is " << dealerHand.total() << ".\n\n";
                     
                     // record dealer's additional cards in gamelog
-                    recordLog << "\t\t";
+                    recordLog << "\t";
                     string n = anotherOne.getSpanishRank() + " de " + anotherOne.getSpanishSuit();
                     recordLog << setfill(' ') << setw(20) << left << n;
                     recordLog << "(" << anotherOne.getEnglishRank() << " of " << anotherOne.getEnglishSuit() << ").\n";
