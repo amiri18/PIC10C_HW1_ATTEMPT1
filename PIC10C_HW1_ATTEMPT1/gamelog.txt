@@ -1,0 +1,28 @@
+-----------------------------------------------
+
+Game number: 1		 Money left: $100
+Bet: 12
+
+Your cards:
+		Dos de oros         (Two of coins).
+		Seis de bastos      (Six of clubs).
+-----------------------------------------------
+
+Game number: 2		 Money left: $88
+Bet: 12
+
+Your cards:
+		Cinco de bastos     (Five of clubs).
+		Sota de copas       (Jack of cups).
+-----------------------------------------------
+
+Game number: 3		 Money left: $76
+Bet: 76
+
+Your cards:
+		Dos de oros         (Two of coins).
+		Caballo de oros     (Knight of coins).
+		As de espadas       (Ace of spades).
+		Caballo de copas    (Knight of cups).
+		Seis de oros        (Six of coins).
+-----------------------------------------------

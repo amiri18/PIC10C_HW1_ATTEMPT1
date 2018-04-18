@@ -65,8 +65,6 @@ public:
      accessor function: displays a single card
      */
     void display() const;
-    
-    void printToFile(string fileName) const;
 };
 
 class Hand {

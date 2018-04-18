@@ -3,7 +3,9 @@
 #include <string>
 #include <ctime>
 #include <fstream>
+#include <sstream>
 #include <cstdlib>
+#include <iomanip>
 #include "cards.h"
 
 using namespace std;
@@ -42,8 +44,12 @@ int main() {
         Card card1;
         playerHand.addCard(card1);
         playerHand.display();
-        //card1.printToFile("gamelog.txt");
         
+        recordLog << "\t\t";
+        string n = card1.getSpanishRank() + " de " + card1.getSpanishSuit();
+        recordLog << setfill(' ') << setw(20) << left << n;
+        recordLog << "(" << card1.getEnglishRank() << " of " << card1.getEnglishSuit() << ").\n";
+     
         bool more = true;
         bool bust = false;
         while (more) { // while they want more cards or until they bust ...
@@ -66,6 +72,11 @@ int main() {
                     anotherCard.display(); // display it
                     cout << "\nYour cards: \n";
                     playerHand.display(); // display all their cards
+                    
+                    recordLog << "\t\t";
+                    string n = anotherCard.getSpanishRank() + " de " + anotherCard.getSpanishSuit();
+                    recordLog << setfill(' ') << setw(20) << left << n;
+                    recordLog << "(" << anotherCard.getEnglishRank() << " of " << anotherCard.getEnglishSuit() << ").\n";
                 }
                 else { // if they don't want another card
                     more = false; // end the loop
@@ -91,6 +102,11 @@ int main() {
                     cout << "New Card: \n"; // display the dealer's cards and their total
                     dealerHand.display();
                     cout << endl << "The dealer's total is " << dealerHand.total() << ".\n\n";
+                    
+                    recordLog << "\t\t";
+                    string n = anotherOne.getSpanishRank() + " de " + anotherOne.getSpanishSuit();
+                    recordLog << setfill(' ') << setw(20) << left << n;
+                    recordLog << "(" << anotherOne.getEnglishRank() << " of " << anotherOne.getEnglishSuit() << ").\n";
                 }
                 
                 // if their total is less than the player's and between (5 - 5.5)
@@ -104,7 +120,14 @@ int main() {
                             cout << "New Card: \n";
                             dealerHand.display();
                             cout << endl << "The dealer's total is " << dealerHand.total() << ".\n\n";
-                            break;}
+                            
+                            recordLog << "\t\t";
+                            string n = anotherOne.getSpanishRank() + " de " + anotherOne.getSpanishSuit();
+                            recordLog << setfill(' ') << setw(20) << left << n;
+                            recordLog << "(" << anotherOne.getEnglishRank() << " of " << anotherOne.getEnglishSuit() << ").\n";
+                            
+                            break;
+                        }
                         case 2: { more = false; // does not pick another card and ends the loop
                             break;
                         }
