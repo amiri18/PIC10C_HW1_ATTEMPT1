@@ -37,6 +37,7 @@ int main() {
         Hand dealerHand; // store dealer's cards
         
         // give the player their first card and display it
+        recordLog << "Your cards:\n";
         cout << "Your cards: \n";
         Card card1;
         playerHand.addCard(card1);
