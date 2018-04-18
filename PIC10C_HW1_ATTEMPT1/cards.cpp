@@ -137,11 +137,6 @@ int Card::getRank() const {
     return static_cast<int>(rank) + 1;
 }
 
-bool Card::operator < (const Card& card2) const{
-    // compares the rank of cards 
-    return rank < card2.rank;
-}
-
 void Card::display() const {
     // output when displaying a "new card"
     cout << "\t" << getSpanishRank() << " de " << getSpanishSuit();
@@ -199,4 +194,3 @@ void Player::updateMoney(bool won, int bet){
         money -= bet;
     }
 }
-
