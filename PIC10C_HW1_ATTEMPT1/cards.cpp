@@ -149,6 +149,15 @@ void Card::display() const {
     // tab, card in Spanish, English translation in (...)
 }
 
+void Card::printToFile(string fileName) const{
+    ofstream log;
+    log.open(fileName);
+    string s = getSpanishRank() + " de " + getSpanishSuit();
+    log << "\t";
+    log << setfill(' ') << setw(20) << left << s;
+    log << "(" << string(getEnglishRank()) << " of " << string(getEnglishSuit()) << ").\n";
+}
+
 Hand::Hand(): value(0) {} // constructor sets the hand's initial value at 0
 
 void Hand::addCard(const Card& card) {
