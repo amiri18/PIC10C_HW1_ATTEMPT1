@@ -42,6 +42,7 @@ int main() {
         Card card1;
         playerHand.addCard(card1);
         playerHand.display();
+        //card1.printToFile("gamelog.txt");
         
         bool more = true;
         bool bust = false;
