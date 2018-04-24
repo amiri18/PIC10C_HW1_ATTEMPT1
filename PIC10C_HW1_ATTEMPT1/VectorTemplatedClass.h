@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <memory>
-// vector class
+
 namespace Pic10c {
     template <typename T>
     class vector{
@@ -27,7 +27,11 @@ namespace Pic10c {
         vector(vector&& vec) : sz(vec.sz), cap(vec.cap) {
             uniquePointer(std::move(vec.uniquePointer));
         }
-        vector& operator=(const vector& copy);
+        vector& operator=(const vector& vec) {
+            if (this != vec) {
+                
+            }
+        }
         bool empty() const;
         size_t size() const;
         size_t capacity() const;
