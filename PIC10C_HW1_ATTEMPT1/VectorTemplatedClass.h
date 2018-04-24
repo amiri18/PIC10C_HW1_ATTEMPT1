@@ -24,7 +24,9 @@ namespace Pic10c {
             }
         }
         
-        vector(vector&& move);
+        vector(vector&& vec) : sz(vec.sz), cap(vec.cap) {
+            uniquePointer(std::move(vec.uniquePointer));
+        }
         vector& operator=(const vector& copy);
         bool empty() const;
         size_t size() const;
