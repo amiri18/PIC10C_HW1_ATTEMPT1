@@ -10,7 +10,7 @@ namespace Pic10c {
     private:
         size_t sz;
         size_t cap;
-        std::unique_ptr<T> uniquePointer;
+        std::unique_ptr<T[]> uniquePointer;
         static const int initinal_cap = 10;
     public:
         vector() : sz(0), cap(static_cast<size_t>(initinal_cap)) {
@@ -27,24 +27,36 @@ namespace Pic10c {
         vector(vector&& vec) : sz(vec.sz), cap(vec.cap) {
             uniquePointer(std::move(vec.uniquePointer));
         }
-        vector& operator=(const vector& vec) {
-            if (this != vec) {
-                
-            }
+        vector& operator=(vector vec) {
+            std::swap(sz, vec.sz);
+            std::swap(cap, vec.cap);
+            uniquePointer.swap(vec.uniquePointer);
+            vec.uniquePointer.reset();
+            return *this;
         }
-        bool empty() const;
+        /*bool empty() const;
         size_t size() const;
         size_t capacity() const;
         T front() const;
-        T back() const;
-        T at(size_t index) const;
-        T& operator[](size_t index);
+        T back() const;*/
+        T at(size_t index) const {
+            return uniquePointer[index];
+        }
+        /*T& operator[](size_t index);
         T operator[](size_t index) const;
         void data_dump_to(std::ostream& out) const;
-        void data_dump() const;
-        void push_back(const T& input);
-        void pop_back();
-        void deleteAt(size_t index);
+        void data_dump() const;*/
+        void push_back(const T& input) {
+            if (sz == cap){
+                std::cout << "hi";
+            }
+            else {
+                ++sz;
+                uniquePointer[sz-1] = input;
+            }
+        }
+        /*void pop_back();
+        void deleteAt(size_t index);*/
     };
 }
 
