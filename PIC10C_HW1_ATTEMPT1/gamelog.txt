@@ -1,5 +1,359 @@
 -----------------------------------------------
 
+<<<<<<< HEAD
+=======
+Game number: 1		 Money left: $100
+Bet: 20
+
+Your cards:
+	Caballo de copas    (Knight of cups).
+	As de copas         (Ace of cups).
+	Siete de copas      (Seven of cups).
+Your total is: 8.5.
+
+-----------------------------------------------
+
+Game number: 2		 Money left: $80
+Bet: 12
+
+Your cards:
+	Cinco de copas      (Five of cups).
+	Dos de copas        (Two of cups).
+Your total is: 7.
+
+Dealer's cards:
+	Sota de copas       (Jack of cups).
+	Cinco de copas      (Five of cups).
+Dealer's total: 5.5.
+
+-----------------------------------------------
+
+Game number: 3		 Money left: $92
+Bet: 12
+
+Your cards:
+	Siete de oros       (Seven of coins).
+Your total is: 7.
+
+Dealer's cards:
+	Sota de oros        (Jack of coins).
+	Caballo de copas    (Knight of cups).
+	Rey de bastos       (King of clubs).
+	Dos de oros         (Two of coins).
+	Tres de bastos      (Three of clubs).
+Dealer's total: 6.5.
+
+-----------------------------------------------
+
+Game number: 4		 Money left: $104
+Bet: 12
+
+Your cards:
+	Rey de espadas      (King of spades).
+	Rey de bastos       (King of clubs).
+	Rey de oros         (King of coins).
+	Tres de bastos      (Three of clubs).
+	Siete de bastos     (Seven of clubs).
+Your total is: 11.5.
+
+-----------------------------------------------
+
+Game number: 5		 Money left: $92
+Bet: 12
+
+Your cards:
+	Dos de espadas      (Two of spades).
+	Tres de espadas     (Three of spades).
+Your total is: 5.
+
+Dealer's cards:
+	Cuatro de oros      (Four of coins).
+	Caballo de copas    (Knight of cups).
+	Caballo de espadas  (Knight of spades).
+Dealer's total: 5.
+
+-----------------------------------------------
+
+Game number: 6		 Money left: $92
+Bet: 88
+
+Your cards:
+	Cinco de espadas    (Five of spades).
+	As de espadas       (Ace of spades).
+Your total is: 6.
+
+Dealer's cards:
+	Sota de copas       (Jack of cups).
+	Cinco de espadas    (Five of spades).
+Dealer's total: 5.5.
+
+-----------------------------------------------
+
+Game number: 7		 Money left: $180
+Bet: 40
+
+Your cards:
+	Cuatro de oros      (Four of coins).
+	As de oros          (Ace of coins).
+	As de espadas       (Ace of spades).
+Your total is: 6.
+
+Dealer's cards:
+	As de espadas       (Ace of spades).
+	Rey de bastos       (King of clubs).
+	Cinco de espadas    (Five of spades).
+Dealer's total: 6.5.
+
+-----------------------------------------------
+
+Game number: 8		 Money left: $140
+Bet: 40
+
+Your cards:
+	Tres de oros        (Three of coins).
+	Siete de bastos     (Seven of clubs).
+Your total is: 10.
+
+-----------------------------------------------
+
+Game number: 9		 Money left: $100
+Bet: 14
+
+Your cards:
+	Cinco de bastos     (Five of clubs).
+	Dos de bastos       (Two of clubs).
+Your total is: 7.
+
+Dealer's cards:
+	Seis de bastos      (Six of clubs).
+Dealer's total: 6.
+
+-----------------------------------------------
+
+Game number: 10		 Money left: $114
+Bet: 60
+
+Your cards:
+	Sota de espadas     (Jack of spades).
+	Siete de oros       (Seven of coins).
+Your total is: 7.5.
+
+Dealer's cards:
+	Siete de copas      (Seven of cups).
+Dealer's total: 7.
+
+-----------------------------------------------
+
+Game number: 11		 Money left: $174
+Bet: 50
+
+Your cards:
+	Dos de oros         (Two of coins).
+	Caballo de copas    (Knight of cups).
+	Sota de oros        (Jack of coins).
+	Dos de bastos       (Two of clubs).
+Your total is: 5.
+
+Dealer's cards:
+	Siete de oros       (Seven of coins).
+Dealer's total: 7.
+
+-----------------------------------------------
+
+Game number: 12		 Money left: $124
+Bet: 50
+
+Your cards:
+	Seis de bastos      (Six of clubs).
+Your total is: 6.
+
+Dealer's cards:
+	As de oros          (Ace of coins).
+	Siete de bastos     (Seven of clubs).
+Dealer's total: 8.
+
+-----------------------------------------------
+
+Game number: 13		 Money left: $174
+Bet: 50
+
+Your cards:
+	Caballo de oros     (Knight of coins).
+	Tres de copas       (Three of cups).
+	Seis de copas       (Six of cups).
+Your total is: 9.5.
+
+-----------------------------------------------
+
+Game number: 14		 Money left: $124
+Bet: 50
+
+Your cards:
+	As de bastos        (Ace of clubs).
+	Tres de copas       (Three of cups).
+	Sota de espadas     (Jack of spades).
+	Siete de espadas    (Seven of spades).
+Your total is: 11.5.
+
+-----------------------------------------------
+
+Game number: 15		 Money left: $74
+Bet: 50
+
+Your cards:
+	Cinco de copas      (Five of cups).
+	Siete de bastos     (Seven of clubs).
+Your total is: 12.
+
+-----------------------------------------------
+
+Game number: 16		 Money left: $24
+Bet: 20
+
+Your cards:
+	Caballo de bastos   (Knight of clubs).
+	Cinco de copas      (Five of cups).
+Your total is: 5.5.
+
+Dealer's cards:
+	As de oros          (Ace of coins).
+	Siete de copas      (Seven of cups).
+Dealer's total: 8.
+
+-----------------------------------------------
+
+Game number: 17		 Money left: $44
+Bet: 20
+
+Your cards:
+	Sota de espadas     (Jack of spades).
+	As de bastos        (Ace of clubs).
+	Cinco de espadas    (Five of spades).
+Your total is: 6.5.
+
+Dealer's cards:
+	Sota de espadas     (Jack of spades).
+	Cinco de bastos     (Five of clubs).
+Dealer's total: 5.5.
+
+-----------------------------------------------
+
+Game number: 18		 Money left: $64
+Bet: 20
+
+Your cards:
+	Cinco de oros       (Five of coins).
+	As de bastos        (Ace of clubs).
+Your total is: 6.
+
+Dealer's cards:
+	Rey de espadas      (King of spades).
+	Rey de copas        (King of cups).
+	Tres de espadas     (Three of spades).
+	Siete de bastos     (Seven of clubs).
+Dealer's total: 11.
+
+-----------------------------------------------
+
+Game number: 19		 Money left: $84
+Bet: 20
+
+Your cards:
+	Rey de bastos       (King of clubs).
+	Cinco de oros       (Five of coins).
+Your total is: 5.5.
+
+Dealer's cards:
+	Cinco de bastos     (Five of clubs).
+		Rey de espadas      (King of spades).
+Dealer's total: 5.5.
+
+-----------------------------------------------
+
+Game number: 20		 Money left: $84
+Bet: 20
+
+Your cards:
+	Dos de copas        (Two of cups).
+	Siete de copas      (Seven of cups).
+Your total is: 9.
+
+-----------------------------------------------
+
+Game number: 21		 Money left: $64
+Bet: 20
+
+Your cards:
+	Tres de espadas     (Three of spades).
+	Dos de espadas      (Two of spades).
+	Cinco de bastos     (Five of clubs).
+Your total is: 10.
+
+-----------------------------------------------
+
+Game number: 22		 Money left: $44
+Bet: 20
+
+Your cards:
+	Dos de oros         (Two of coins).
+	Cuatro de copas     (Four of cups).
+Your total is: 6.
+
+Dealer's cards:
+	Caballo de oros     (Knight of coins).
+	Rey de oros         (King of coins).
+	As de copas         (Ace of cups).
+	As de espadas       (Ace of spades).
+	Siete de copas      (Seven of cups).
+Dealer's total: 10.
+
+-----------------------------------------------
+
+Game number: 23		 Money left: $64
+Bet: 20
+
+Your cards:
+	Seis de copas       (Six of cups).
+Your total is: 6.
+
+Dealer's cards:
+	Caballo de oros     (Knight of coins).
+	Dos de bastos       (Two of clubs).
+	As de bastos        (Ace of clubs).
+	Seis de oros        (Six of coins).
+Dealer's total: 9.5.
+
+-----------------------------------------------
+
+Game number: 24		 Money left: $84
+Bet: 80
+
+Your cards:
+	Dos de espadas      (Two of spades).
+	Dos de bastos       (Two of clubs).
+	As de copas         (Ace of cups).
+Your total is: 5.
+
+Dealer's cards:
+	Sota de oros        (Jack of coins).
+	Cuatro de oros      (Four of coins).
+	Dos de copas        (Two of cups).
+Dealer's total: 6.5.
+
+-----------------------------------------------
+
+Game number: 25		 Money left: $4
+Bet: 4
+
+Your cards:
+	Caballo de oros     (Knight of coins).
+	Seis de oros        (Six of coins).
+Your total is: 6.5.
+
+Dealer's cards:
+	Siete de bastos     (Seven of clubs).
+Dealer's total: 7.
+>>>>>>> master
 
 Bet: 12
 

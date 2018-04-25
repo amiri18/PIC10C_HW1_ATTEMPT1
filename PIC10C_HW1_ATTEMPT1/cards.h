@@ -55,13 +55,6 @@ public:
     int getRank() const;
     
     /**
-     accessor function: allows for cards to compared by rank
-     @param card2 , card to be compared
-     @return true if card2 is greater, false if card2 is less
-     */
-    bool operator < (const Card& card2) const;
-    
-    /**
      accessor function: displays a single card
      */
     void display() const;
@@ -93,8 +86,6 @@ public:
      accessor function: display's the cards in the player's hand
      */
     void display() const;
-    
-    //bool compareHands(const Hand& hand) const;
 };
 
 class Player {
