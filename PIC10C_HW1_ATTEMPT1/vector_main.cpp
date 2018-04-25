@@ -3,22 +3,32 @@
 #include "VectorTemplatedClass.h"
 
 int main() {
-    Pic10c::vector<int> v;
-    Pic10c::vector<int> u;
-    v.push_back(3);
-    v.push_back(4);
-    for (size_t i = 0; i < 2; ++i){
-        std::cout << v.at(i) << " ";
-    }
-    std::cout << std::endl;
-    u.push_back(2);
-    for (size_t i = 0; i < 1; ++i){
-        std::cout << u.at(i) << " ";
-    }
-    std::cout << std::endl;
-    u = v;
-    for (size_t i = 0; i < 2; ++i){
-        std::cout << u.at(i) <<  " ";
-    }
+    using Pic10c::vector;
+    using std::cout;
+    
+    cout << "Create & display empty vector (v1)\n";
+    vector<float> v1;
+    print_vector(v1);
+    v1.dump_data();
+    
+    int size = 15;
+    cout << "\nPopulate & display vector with " << size << " entries (v1)\n";
+    for ( int i = 1 ; i <= size ; ++i )
+        v1.push_back(i);
+    print_vector(v1);
+    
+    cout << "\nCopy non-empty vector, pop back last entry & display (v2)\n";
+    vector<float> v2(v1);
+    v2.pop_back();
+    print_vector(v2);
+    
+    cout << "\nReassign vector (v1 = v2) & display\n";
+    v1 = v2;
+    print_vector(v1);
+    
+    cout << "\nDump contents of vectors (v1,v2)\n";
+    v1.dump_data();
+    v2.dump_data();
+
     return 0;
 }
