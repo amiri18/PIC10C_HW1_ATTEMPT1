@@ -2,12 +2,15 @@
 #include <string>
 #include "VectorTemplatedClass.h"
 
+/* Test Run:
+Program can also work for other types such as: std::string, char, int, double, etc. */
+
 int main() {
     using Pic10c::vector;
     using std::cout;
     
     cout << "Create & display empty vector (v1)\n";
-    vector<float> v1;
+    vector<double> v1;
     print_vector(v1);
     v1.dump_data();
     
@@ -18,7 +21,7 @@ int main() {
     print_vector(v1);
     
     cout << "\nCopy non-empty vector, pop back last entry & display (v2)\n";
-    vector<float> v2(v1);
+    vector<double> v2(v1);
     v2.pop_back();
     print_vector(v2);
     
