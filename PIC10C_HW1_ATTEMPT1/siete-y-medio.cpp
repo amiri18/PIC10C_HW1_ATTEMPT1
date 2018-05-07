@@ -138,7 +138,7 @@ int main() {
                             cout << endl << "The dealer's total is " << dealerHand.total() << ".\n\n";
                             
                             // record dealer's additional cards in gamelog
-                            recordLog << "\t\t";
+                            recordLog << "\t";
                             string n = anotherOne.getSpanishRank() + " de " + anotherOne.getSpanishSuit();
                             recordLog << setfill(' ') << setw(20) << left << n;
                             recordLog << "(" << anotherOne.getEnglishRank() << " of " << anotherOne.getEnglishSuit() << ").\n";
