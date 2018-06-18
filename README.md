@@ -7,5 +7,12 @@ In the game that I programmed, the user starts out with $100. In order to beat "
 - The user loses (either having a lower hand value than the dealer or the user busts).
 - The user and dealer die (both have the same hand value).
 
-While the user plays the game, the program keeps track of each round. Once the game is finished, the program produces a `gamelog.txt` file which has recorded the bets, cards, and scores of each round. 
+While the user plays the game, the program keeps track of each round. Once the game is finished, the program produces a `gamelog.txt` file which has recorded the bets, cards, and hand values of each round. 
 ## Programming Details:
+I didn't have too many difficulties with this project. I did have a few merge conflicts, however using mergetool to result them helped a lot.
+### `siete-y-medio.cpp`
+This file contains the main loop of the game, alternating between the user and the dealer, as well as records the game information to `gamelog.txt`.
+### `cards.h` and `cards.cpp`
+`cards.h` is the header file for which contains the declarations of the Card, Hand, and Player class, and `cards.cpp` contains all their definitions.
+### `gamelog.txt`
+This file currently holds the latest log of the game played, keeping track of the bet, hards dealt, and hand values of both the player and dealer.
