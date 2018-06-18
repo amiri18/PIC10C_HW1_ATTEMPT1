@@ -1,4 +1,4 @@
-# PIC10C Homework Assignment 1B: "Siete y Medio" Card Game
+# Homework Assignment 1B: "Siete y Medio" Card Game
 
 This is a card game that is very similar to the game "Twenty One", execpt in this version it is *Seven and Half*." There are regular cards, ace through seven, that are their numeric value (ace is one), and there are face cards that are all the value half (or 0.5). There are four suits, bastos (clubs), oros (golden coins), copas (cups), and espadas (swords) and for the face cards there are sota (jack), the caballo (knight), and the rey (king). The goal of the game, similar to Twenty One, is to get a total of seven and half, and the game is played against the dealer.
 
