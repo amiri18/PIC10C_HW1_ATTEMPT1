@@ -6,5 +6,6 @@ In the game that I programmed, the user starts out with $100. In order to beat "
 - The user wins (either having a higher hand value than the dealer or the dealer busts).
 - The user loses (either having a lower hand value than the dealer or the user busts).
 - The user and dealer die (both have the same hand value).
+
 While the user plays the game, the program keeps track of each round. Once the game is finished, the program produces a `gamelog.txt` file which has recorded the bets, cards, and scores of each round. 
 ## Programming Details:
