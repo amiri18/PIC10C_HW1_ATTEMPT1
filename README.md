@@ -20,12 +20,12 @@ This file contains the main loop of the game, alternating between the user and t
 This file currently holds the log of the last game that was played, keeping track of the bet, cards dealt, and hand values of both the player and dealer.
 # Homework Assignment 1A: Template Vector Class
 ## Class Details:
-This program is a templated vector class coded from "scratch." It has the typical vector functions like `push_back`, `pop_back`, etc. And it can store different data types such as strings, doubles and ints. 
+This program is a templated vector class coded from "scratch." It has the typical vector functions like `push_back`, `pop_back`, etc. The vector can store different data types such as strings, doubles and ints. 
+
+More details of the assignment described here: https://bitbucket.org/rikis-salazar/10b-hw-pic10b-vector
 ## Programming Details: 
 I had done a similar project in pic10b, so this assignment was relatively simple, but fun nonetheless.
 ### `vector_main.cpp`
 This file holds simple code that tests the functions of the program to see that it runs successfully.
 ### `VectorTemplatedClass.h`
 This file contains the vector class constructors, operators, and its functions.
-
-More details of the assignment described here: https://bitbucket.org/rikis-salazar/10b-hw-pic10b-vector
